@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contactez-moi</title>
+  </head>
+  <body>
+    <h1>Détails pour me contactez</h1>
+    <p>880 Germain-Massicotte</p>
+    <p>Trois-Rivières</p>
+    <p>Qc. Canada</p>
+    <p>G9A 6K5</p>
+    <p>Mon Courriel: <a href="mailto:guy.guerin@wowdzign.com?subject=feedback">contactez-moi</a></p>
+    <hr>
+
+    <form action="mailto:guy.guerin@wowdzign.com" method="post" enctype="text/plain">
+    <label>Your Name:</label>
+    <input type="text" name="yourName" value=""><br>
+
+    <label>Your Email:</label>
+    <input type="email" name="yourEmail" value=""><br>
+
+    <label>Your Message</label><br>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <small>Format: 123-456-7890</small><br>
+    <input type="submit" name="save" value="soumettre">
+    </form>
+  </body>
+</html>
